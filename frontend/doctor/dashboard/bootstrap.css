@@ -1,47 +1,53 @@
-body{
+body {
   margin: 0;
   text-align: center;
 }
-.carouselimg{
-
+.carouselimg {
   width: 50rem;
   height: 35rem;
-
 }
-.text{
+.text {
   color: white;
   font-weight: bolder;
 }
-.vmeetimg{
+.vmeetimg {
   width: 2rem;
   height: 2rem;
   padding: 0rem;
   margin-left: 0rem;
   margin-right: 0.5rem;
-    border-radius: 10%;
+  border-radius: 10%;
 }
-.about{
-   margin-bottom: 15px;
+.about {
+  margin-bottom: 15px;
   text-align: center;
-
 }
-.bottom-container{
+.bottom-container {
   text-align: center;
 
   background-color: #d9534f;
   margin: 0;
   color: white;
 }
-.copywrite{
+.copywrite {
   color: white;
 }
-.footer-link{
+.footer-link {
   color: white;
   font-weight: normal;
   font-size: 18px;
   text-decoration: none;
   margin: auto 20px auto;
 }
-.footer-link:hover{
+.footer-link:hover {
   color: gold;
+}
+
+body {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.visible {
+  opacity: 1;
 }

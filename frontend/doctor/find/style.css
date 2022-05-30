@@ -110,3 +110,12 @@ nav {
   overflow: hidden;
   max-height: 180px;
 }
+
+body {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.visible {
+  opacity: 1;
+}

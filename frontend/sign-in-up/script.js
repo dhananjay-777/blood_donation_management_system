@@ -2,6 +2,12 @@ const apiUrl = "http://localhost:3000";
 
 const signInForm = document.querySelector(".sign-in-form");
 
+const body = document.querySelector("body");
+
+window.addEventListener("load", () => {
+  body.classList.add("visible");
+});
+
 signInForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -22,10 +28,11 @@ signInForm.addEventListener("submit", (event) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      const { key } = data;
+      const { token } = data;
 
-      if (key) {
-        alert("success");
+      if (token) {
+        localStorage.setItem("jwt", token);
+        // alert("success");
         location.href = "../doctor/dashboard/bootstrap.html";
       } else {
         alert("SignIn Again");
@@ -61,13 +68,13 @@ signUpForm.addEventListener("submit", (event) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      const { key } = data;
+      const { token } = data;
 
-      if (key) {
-        alert("success");
+      if (token) {
+        localStorage.setItem("jwt", token);
         location.href = "../doctor/dashboard/bootstrap.html";
       } else {
-        alert("SignUp Again");
+        alert("SignIn Again");
       }
     })
     .catch((err) => {

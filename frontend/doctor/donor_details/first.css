@@ -452,7 +452,7 @@ form.sign-in-form {
   }
 }
 
-.containerr{
+.containerr {
   /* background-color: black; */
   display: flex;
   justify-content: space-between;
@@ -460,7 +460,7 @@ form.sign-in-form {
   padding-bottom: 500px;
 }
 
-.imagee{
+.imagee {
   margin: 100px;
   padding-top: 0px;
 }
@@ -491,3 +491,11 @@ form.sign-in-form {
   }
 }
 
+body {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.visible {
+  opacity: 1;
+}
