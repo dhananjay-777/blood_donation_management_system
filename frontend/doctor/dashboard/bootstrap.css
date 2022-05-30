@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  text-align: center;
+}
+.carouselimg{
+
+  width: 50rem;
+  height: 35rem;
+
+}
+.text{
+  color: white;
+  font-weight: bolder;
+}
+.vmeetimg{
+  width: 2rem;
+  height: 2rem;
+  padding: 0rem;
+  margin-left: 0rem;
+  margin-right: 0.5rem;
+    border-radius: 10%;
+}
+.about{
+   margin-bottom: 15px;
+  text-align: center;
+
+}
+.bottom-container{
+  text-align: center;
+
+  background-color: #d9534f;
+  margin: 0;
+  color: white;
+}
+.copywrite{
+  color: white;
+}
+.footer-link{
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none;
+  margin: auto 20px auto;
+}
+.footer-link:hover{
+  color: gold;
+}
