@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000";
+const apiUrl = "https://blood-donation-mngment-system.herokuapp.com";
 const add = document.querySelector(".add-detail");
 const token = localStorage.getItem("jwt");
 const body = document.querySelector("body");
